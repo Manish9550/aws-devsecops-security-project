@@ -18,15 +18,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: security-scan
-    steps:
-      - name: Deploy Step
-        run: echo "Deploying to AWS..."
-        - name: Install Node
-  uses: actions/setup-node@v3
-   with:
-    node-version: '18'
+     steps:
+       - name: Deploy Step
+         run: echo "Deploying to AWS..."
+         - name: Install Node
+   uses: actions/setup-node@v3
+    with:
+     node-version: '18'
 
-- name: Install dependencies
+ - name: Install dependencies
   run: npm install
 
 - name: Run security audit
