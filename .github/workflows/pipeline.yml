@@ -23,7 +23,7 @@ jobs:
         run: echo "Deploying to AWS..."
         - name: Install Node
   uses: actions/setup-node@v3
-  with:
+   with:
     node-version: '18'
 
 - name: Install dependencies
